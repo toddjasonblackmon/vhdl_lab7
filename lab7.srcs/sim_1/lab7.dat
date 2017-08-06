@@ -1,0 +1,31 @@
+     0 ns 1 001 000 0     
+   100 ns 0 001 000 0         -- Set frequency to 500 Hz
+    20 ns 0 000 000 0         -- Reset sync
+  7810 ns 0 000 000 1 1 1  0
+  7810 ns 0 001 000 1 1 1  0
+  7810 ns 0 001 000 1 1 0  1
+    10 ns 0 001 000 1 0 0  2
+  7800 ns 0 001 000 1 1 0  2 
+    10 ns 0 010 000 1 0 0  3     -- Set frequency to 1 kHz
+  3900 ns 0 010 000 1 1 0  3
+  3910 ns 0 011 000 1 1 0  4     -- Set frequency to 1.5 kHz
+  2600 ns 0 011 000 1 1 0  5     
+  2600 ns 0 100 000 1 1 0  6     -- Set frequency to 2.0 kHz   
+  1950 ns 0 100 000 1 1 0  7
+  1950 ns 0 101 000 1 1 0  8     -- Set frequency to 2.5 kHz
+  1560 ns 0 101 000 1 1 0  9
+  1560 ns 0 110 000 1 1 0 10     -- Set frequency to 3.0 kHz
+  1300 ns 0 110 000 1 1 0 11
+  1300 ns 0 111 000 1 1 0 12     -- Set frequency to 3.5 kHz
+  1120 ns 0 111 000 1 1 0 13 
+  1120 ns 0 111 000 1 1 0 14
+286720 ns 0 111 000 1 1 0 14     -- Should be exact wrap point
+286720 ns 0 111 001 1 1 0 14     -- Should be exact wrap point
+286720 ns 0 111 010 1 1 0 14     -- Should be exact wrap point
+286720 ns 0 111 011 1 1 0 14     -- Should be exact wrap point
+286720 ns 0 111 100 1 1 0 14     -- Should be exact wrap point
+286720 ns 0 111 101 1 1 0 14     -- Should be exact wrap point
+286720 ns 0 111 110 1 1 0 14     -- Should be exact wrap point
+286720 ns 0 111 111 1 1 0 14     -- Should be exact wrap point
+286720 ns 0 111 111 1 1 0 14     -- Should be exact wrap point
+    10 ns 0 111 000 1 0 0 15
