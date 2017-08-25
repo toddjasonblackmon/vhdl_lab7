@@ -91,7 +91,8 @@ begin
     volume_shift <= unsigned (not VOL_SEL);
     audio_scaled <= shift_right (signed(audio_fs), to_integer(volume_shift));
     -- Reduce to 10 bits and convert to unsigned
-    duty_cycle <= std_logic_vector(audio_scaled(15 downto 6)) xor "1000000000";
+    duty_cycle <= std_logic_vector(audio_scaled(15 downto 6)) xor "1000000000" when dc_override = '0'
+                  else "0000000000";
     
     -- PWM Generator
     pwm_gen : entity pwm_generator port map (
